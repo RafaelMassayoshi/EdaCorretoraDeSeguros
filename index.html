@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo-kanji.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/conteudo.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Eda Corretora de Seguros</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./assets/img/logo-kanji.png" alt="">
+            <div class="logo-nome">
+                <span class="strong">EDA</span>
+                <span>CORRETORA</span>
+                <span>DE SEGUROS</span>
+            </div>
+        </div>
+        <nav>
+            <div class="opcoes">
+                <a href="#inicio">Inicio</a>
+                <a href="#sessao-produtos">Produtos</a>
+                <!-- <a href="#cotacao">Cotação</a> -->
+                <a href="#contatos">Contatos</a>
+            </div>
+            <img class="menu-mobille" src="./assets/icones/iconemenu.svg" alt="">
+            <div class="menu-mobille-opcoes">
+                <a href="#inicio">Inicio</a>
+                <a href="#sessao-produtos">Produtos</a>
+                <!-- <a href="#cotacao">Cotação</a> -->
+                <a href="#contatos">Contatos</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="primeira sessao" id="inicio">
+            <div class="inicio">
+                <div class="scroll-reveal texto">
+                    <h1>O CUIDADO<br>QUE VOCÊ MERECE</h1>
+                    <p>Oferecemos as melhores soluções em Seguros, Planos de Saúde, Consórcios e Vida. Garanta
+                        segurança, tranquilidade e economia com quem entende do assunto. Encontre o plano ideal para
+                        você!</p>
+                    <a class="whatsapp botao-cotacao">Faça a sua cotação</a>
+                </div>
+                <img src="./assets/img/img-familia.png" alt="">
+            </div>
+        </section>
+        <section id="sessao-produtos" class="segunda sessao produtos">
+            <h2>CONHEÇA NOSSOS PRODUTOS</h2>
+            <div class="cards">
+                <div id="card-auto" onclick="mostrarConteudoCard('auto')" class="card scroll-reveal">
+                    <img src="./assets/icones/iconecarro.svg" alt="">
+                    <h3>Seguro de Automóvel</h3>
+                    <p>Proteção completa para o seu carro, moto ou frotas</p>
+                </div>
+                <div onclick="mostrarConteudoCard('planoSaude')" class="card scroll-reveal">
+                    <img src="./assets/icones/iconeestetoscopio.svg" alt="">
+                    <h3>Planos de Saúde</h3>
+                    <p>Planos de saúde personalizados para você e sua família</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <img src="./assets/icones/iconemoney.svg" alt="">
+                    <h3>Consórcios</h3>
+                    <p>Realize seus sonhos com parcelas acessíveis e sem preocupação</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <img src="./assets/icones/iconedog.svg" alt="">
+                    <h3>Seguro Pet</h3>
+                    <p>Cuide do seu melhor amigo com segurança e tranquilidade</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <img src="./assets/icones/iconeviagem.svg" alt="">
+                    <h3>Seguro Viagem</h3>
+                    <p>Viaje sabendo que está protegido em qualquer lugar</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <img src="./assets/icones/iconevida.svg" alt="">
+                    <h3>Seguro de Vida</h3>
+                    <p>Garanta o futuro de quem você ama com segurança e proteção</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <img src="./assets/icones/iconecasa.svg" alt="Seguro Residencial">
+                    <h3>Seguro Residencial</h3>
+                    <p>Proteja seu lar contra imprevistos como incêndios, roubos e danos estruturais</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <img src="./assets/icones/iconenotebook.svg" alt="Seguro Residencial">
+                    <h3>Seguro de Eletrônicos</h3>
+                    <p>Proteja seus equipamentos eletrônicos contra danos ou roubos</p>
+                </div>
+                <div class="card-conteudo-infos">
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+        <div class="seguradoras-texto">
+            <div class="seguradoras-texto-conteudo scroll-reveal">
+                <h2>AS MAIORES SEGURADORAS DO BRASIL</h2>
+                <p>Trabalhamos com as maiores seguradoras e convênios do país para oferecer opções sob medida, feitas
+                    para combinar com o seu perfil e garantir a melhor experiência em proteção e economia.</p>
+            </div>
+        </div>
+        <div class="seguradoras">
+            <div class="faixa">
+                <img src="./assets/img/seguradoras/porto-seguro.png">
+                <img src="./assets/img/seguradoras/porto-saude.png">
+                <img src="./assets/img/seguradoras/porto-bank.png">
+                <img src="./assets/img/seguradoras/azul-seguros.png">
+                <img src="./assets/img/segs/allianz.webp">
+                <img src="./assets/img/segs/amil.avif">
+                <img src="./assets/img/segs/ituran.png">
+                <img src="./assets/img/segs/mapfre.jpeg">
+                <img src="./assets/img/segs/suhai.webp">
+                <img src="./assets/img/segs/tokio-marine.jpg">
+                <img src="./assets/img/segs/HDI.png">
+            </div>
+        </div>
+        <div class="avaliacoes-sessao">
+            <h2>AVALIAÇÕES DE CLIENTES</h2>
+            <div class="parte-avaliacao">
+
+                <div class="avaliacao">
+                    <div class="perfil">
+                        <img src="./assets/Nova pasta/eliane.png">
+                        <div class="perfil-nome-data">
+                            <label class="nome">Eliane Silva</label>
+                            <label class="data">21/10/2025</label>
+                        </div>
+                    </div>
+                    <div class="estrelas">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+
+                    </div>
+                    <label class="avaliacao-comentario">Fiquei muito satisfeita com o atendimento! O corretor Rafael foi
+                        atencioso, explicou todos os detalhes do plano de forma clara e transparente, tirou todas as
+                        minhas dúvidas e acompanhou todo o processo até a finalização!Fiquei muito satisfeita com o
+                        atendimento! O corretor Rafael foi atencioso, explicou todos os detalhes do plano de forma clara
+                        e transparente, tirou todas as minhas dúvidas e acompanhou todo o processo até a
+                        finalização!</label>
+                </div>
+                <div class="avaliacao">
+                    <div class="perfil">
+                        <img src="./assets/Nova pasta/renata.png">
+                        <div class="perfil-nome-data">
+                            <label class="nome">Renata Azevedo</label>
+                            <label class="data">07/09/2025</label>
+                        </div>
+                    </div>
+                    <div class="estrelas">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+
+                    </div>
+                    <label class="avaliacao-comentario">Atendimento de excelência, seriedade, celeridade e compromisso.
+                        Indico a todos que queiram fazer um ótimo negócio.</label>
+                </div>
+                <div class="avaliacao">
+                    <div class="perfil">
+                        <img src="./assets/Nova pasta/marcia.png">
+                        <div class="perfil-nome-data">
+                            <label class="nome">Marcia Lobo</label>
+                            <label class="data">18/09/2025</label>
+                        </div>
+                    </div>
+                    <div class="estrelas">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                    </div>
+                    <label class="avaliacao-comentario">Super recomendo.
+                        Faço os meus seguros com eles .
+                        Já estou indo para o terceiro ano, sempre renovando as minhas apólices.</label>
+                </div>
+                <div class="avaliacao">
+                    <div class="perfil">
+                        <img src="./assets/Nova pasta/marcelo.png">
+                        <div class="perfil-nome-data">
+                            <label>Marcelo Carnut</label>
+                            <label>25/08/2025</label>
+                        </div>
+                    </div>
+                    <div class="estrelas">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                    </div>
+                    <label class="avaliacao-comentario">Estou passando todos os seguros, está corretora, carro, vida e
+                        imóvel, conseguiu sempre diminuir o valor do corretor que fazia a anos, super
+                        satisfeito.</label>
+                </div>
+                <div class="avaliacao">
+                    <div class="perfil">
+                        <img src="./assets/Nova pasta/paulo.png">
+                        <div class="perfil-nome-data">
+                            <label class="nome">Paulo Rodolfo</label>
+                            <label class="data">18/09/2025</label>
+                        </div>
+                    </div>
+                    <div class="estrelas">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        <img class="estrela" src="./assets/icones/iconeestrela.svg" alt="">
+                        
+                    </div>
+                    <label class="avaliacao-comentario">Atendimento de excelência, seriedade, celeridade e compromisso.
+                    Indico a todos que queiram fazer um ótimo negócio.</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="sessao footer" id="contatos">
+        <a class="whatsapp botao-whatsapp">
+            <img src="./assets/icones/iconewhatsapp.svg">
+            <span>Solicite uma cotação</span>
+        </a>
+        <div class="contatos">
+            <h5>FALE CONOSCO</h5>
+            <div class="contato-opcao">
+                <img class="contato_icone" src="./assets/icones/iconework.svg">
+                <p><strong>Atendimento:</strong> Segunda a sábado, das 09h às 18h</p>
+            </div>
+            <div class="contato-opcao">
+                <img class="contato_icone" src="./assets/icones/iconetelefone.svg">
+                <p><strong>Telefone:</strong> (11) 93267-1602</p>
+            </div>
+            <div class="contato-opcao">
+                <img class="contato_icone" src="./assets/icones/iconeemail.svg">
+                <p><strong>E-mail:</strong> eda.seguros@hotmail.com</p>
+            </div>
+        </div>
+        <img class="logo-footer" src="./assets/img/CORRETORA_DE_SEGUROS-removebg-preview.png">
+    </footer>
+    <script src="./scripts/script.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+body {
+    display: flex;
+    /* background: linear-gradient(90deg, #ffede2, #fa9f63); */
+    flex-direction: column;
+    position: relative;
+        background-color: rgb(249, 252, 255);
+    }
+
+ .primeira::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--laranja-corretora);
+    box-sizing: border-box;
+
+} 
+
+.sessao {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.primeira {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/img-familia.png") center/cover no-repeat;
+  height: 100vh;
+
+} 
+
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: var(--laranja-corretora);
+}
+
+h2,
+h4,
+h5 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--laranja-corretora);
+}
+
+.inicio {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-top: 40px;
+    max-height: 100%;
+
+}
+
+
+.inicio .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+}
+
+.inicio .texto p {
+    font-family: var(--font);
+    font-weight: 300;
+    font-size: 25px;
+    /* color: var(--cinza-corretora); */
+    color: #ffff;
+}
+
+.inicio .texto .botao-cotacao {
+    cursor: pointer;
+    background-color: var(--laranja-corretora);
+    width: fit-content;
+    padding: 15px 32px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffd9c0;
+    border-radius: 30px;
+    align-self: flex-end;
+    box-shadow: 5px 5px 5px -3px #464646;
+    text-decoration: none;
+    animation: piscar 2s infinite alternate;
+}
+
+.inicio .texto .botao-cotacao:hover {
+    background-color: #fd9e5f;
+    color: var(--laranja-corretora);
+    
+}
+
+.inicio img {
+    display: none;
+    width: 80%;
+    border-radius: 20px;
+    justify-self: end;
+}
+
+/* --------------------------------------------- */
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(249, 252, 255);
+    gap: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    place-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 354px;
+    box-shadow: 0 5px 10px 0px #2f2f2f;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    gap: 10px;
+}
+
+.card h3 {
+    color: var(--laranja-corretora);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 18px;
+    color: var(--cinza-corretora);
+}
+
+.card img {
+    background-color: #ff863b;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+}
+
+.card-conteudo-infos{
+    display: none;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color:rgb(240, 240, 240);
+    position: absolute;
+    width: 50vw;
+    border: 2px solid var(--laranja-corretora);
+    overflow: hidden;
+}
+
+.card-conteudo-infos-texto{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 25px;
+    color: var(--cinza-corretora);
+}
+
+.card-conteudo-infos-texto a{
+    display: flex;
+    background-color: var(--laranja-corretora);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.sair{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 50px;
+}
+/* ------------------------------- */
+.seguradoras {
+    display: flex;
+    background-color: rgb(249, 252, 255);
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: #25d366; */
+}
+
+.faixa {
+    /* background-color: violet; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    gap: 80px;
+    animation: slide 20s linear infinite alternate;
+}
+
+.seguradoras img {
+    width: 200px;
+    object-fit: contain;
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(150vw);
+    }
+
+    to {
+        transform: translateX(-150%);
+    }
+}
+
+
+.seguradoras-texto {
+    display: grid;
+    grid-template-columns: 80fr 20fr;
+    width: 100%;
+    text-align:left;
+     clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 90%);
+    font-size: 35px;
+    color: var(--cinza-corretora);
+    font-weight: 400;
+    font-family: var(--font);
+    padding: 80px 50px 80px 50px;
+     background: linear-gradient(90deg, #ffede2, #fa9f63);
+}
+
+
+
+/*--------------------------------*/
+.avaliacoes-sessao{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    width: 100%;
+    margin-bottom: 10vh;
+    
+}
+
+.avaliacoes-sessao h2{
+    background: linear-gradient(90deg,#fa9f63, #ffede2 );
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0 100%);
+    padding: 50px 80px 150px 50px;
+    width: 100%;
+} 
+
+
+.parte-avaliacao{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 50px;
+    overflow: auto;
+} 
+
+.parte-avaliacao::-webkit-scrollbar {
+    height: 10px; /* deixa a barra bem fina */
+}
+
+.parte-avaliacao::-webkit-scrollbar-track {
+    background: transparent; /* remove espaçamento visível */
+}
+
+.parte-avaliacao::-webkit-scrollbar-thumb {
+    background: var(--laranja-corretora); /* laranja degradê da corretora */
+     border-radius: 10px;
+    border: 1px solid transparent; /* evita "buracos" no topo e fundo */
+    background-clip: padding-box;  /* força o preenchimento total */
+    min-height: 10px; /* previne bug visual */
+}
+
+.avaliacao{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 400px;
+    height: 90%;
+    border-radius: 20px;
+    border: solid 1px #949494;
+    box-shadow: 0 2px 3px black;
+    gap: 20px;
+}
+
+
+.avaliacao-comentario {
+    width: 100%;
+    max-height: 120px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    color: var(--cinza-corretora);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    scrollbar-gutter: stable;
+}
+
+
+.estrelas{
+    /* background-color: #25d366; */
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:5px;
+}
+
+.estrelas .estrela{
+    height: 20px;
+    width: fit-content;
+}
+
+.avaliacao .perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil-nome-data .data{
+    color: var(--cinza-corretora);
+    font-weight: 100;
+    font-size: 13px;
+}
+.avaliacao img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.avaliacao .perfil-nome-data{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra de rolagem dentro do comentário */
+.avaliacao-comentario::-webkit-scrollbar {
+    width: 5px; /* deixa a barra bem fina */
+}
+
+.avaliacao-comentario::-webkit-scrollbar-track {
+    background: transparent; /* remove espaçamento visível */
+}
+
+.avaliacao-comentario::-webkit-scrollbar-thumb {
+    background: var(--laranja-corretora); /* laranja degradê da corretora */
+     border-radius: 10px;
+    border: 1px solid transparent; /* evita "buracos" no topo e fundo */
+    background-clip: padding-box;  /* força o preenchimento total */
+    min-height: 10px; /* previne bug visual */
+}
+
+
+
+/* ------------------------------ */
+.terceira {
+    display: none;
+}
+
+.solicitar-cotacao {
+    display: flex;
+    flex-direction: row;
+    /* padding: 50px; */
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.solicitar-cotacao p {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.formulario-texto {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff863b;
+    padding: 30px;
+    border-radius: 30px;
+    width: 35vw;
+    gap: 18px;
+    box-shadow: 5px 5px 20px 1px #000;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.campo input,
+select {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.campo select {
+    font-size: 20px;
+}
+
+.formulario button {
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    align-self: center;
+}
+
+
+/* ----------------------------------------------------- */
+
+ .footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--laranja-corretora);
+    box-sizing: border-box;
+    z-index: 1;
+} 
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--cinza-corretora);
+    /* padding: 50px 80px; */
+    z-index: 0;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contato-opcao {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 30px;
+}
+
+.contato-opcao p {
+    color: aliceblue;
+}
+
+.contato-opcao img {
+    height: 40px;
+}
+
+.botao-whatsapp {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 12px 0 0 12px;
+    background-color: #25d366;
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+    box-shadow: black 5px 5px 10px;
+    text-decoration: none;
+    animation: piscar 2s infinite alternate;
+}
+
+@keyframes piscar {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Largura da barra */
+
+
+/* --------------------------- */
+
+/* Estado inicial: escondido e deslocado */
+.scroll-reveal {
+  opacity: 0;              /* invisível */
+  transform: translateX(-50px); /* deslocado 50px para a esquerda */
+  transition: all 0.8s ease-out; /* suaviza a animação */
+}
+
+/* Estado final: aparece na tela */
+.scroll-reveal.active {
+  opacity: 1;              /* visível */
+  transform: translateX(0); /* volta para posição original */
+}

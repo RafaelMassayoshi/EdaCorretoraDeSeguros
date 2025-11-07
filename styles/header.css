@@ -1,0 +1,94 @@
+:root {
+    --cinza-corretora: #2D2C2C;
+    --laranja-corretora: #F55F03;
+    --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    font-family: var(--poppins);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+.cabecalho {
+    z-index: 10;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cinza-corretora);
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    width: 95vw;
+    border-radius: 12px;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo-nome {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.9;
+}
+
+.logo-nome .strong {
+    color: var(--laranja-corretora);
+    font-size: 25px;
+    font-weight: bolder;
+    width: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo-nome span {
+    font-family: var(--poppins);
+    color: rgb(220, 220, 220);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.opcoes {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-family: var(--poppins);
+    font-size: 20px;
+    font-weight: 400;
+    gap: 4rem;
+}
+
+.opcoes a {
+    transition: background 0.3s;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.opcoes a:hover {
+    color: var(--laranja-corretora);
+
+}
+
+.menu-mobille {
+    display: none;
+}
+
+.menu-mobille-opcoes {
+    display: none;
+}

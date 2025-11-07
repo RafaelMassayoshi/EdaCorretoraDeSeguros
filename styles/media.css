@@ -1,0 +1,253 @@
+@media (max-width: 850px) {
+    header .opcoes {
+        display: none;
+    }
+
+    .cabecalho {
+        padding: 5px 15px;
+    }
+
+    .primeira {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inicio {
+        display: flex;
+
+    }
+
+    .inicio img {
+        top: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    .inicio .texto {
+        width: 90vw;
+    }
+
+    .inicio .texto h1 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .inicio .texto p {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /* .inicio .texto br {
+        display: none;
+    } */
+
+    .menu-mobille {
+        display: flex;
+        height: 50px;
+    }
+
+    .menu-mobille-opcoes {
+        background-color: var(--cinza-corretora);
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 45px;
+        right: 0px;
+        width: 40vw;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 40px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .menu-mobille-opcoes a {
+        align-self: center;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    /* --------------------------------------- */
+    .card img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .card h3 {
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* -------------------------------------------- */
+    .seguradoras {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .faixa {
+        gap: 20px;
+        animation: slide 20s linear infinite alternate;
+    }
+
+    .seguradoras img {
+        width: 30%;
+    }
+
+    .seguradoras-texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    .seguradoras-texto h2,
+    p {
+        text-align: left;
+    }
+
+    .seguradoras-texto-conteudo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    @keyframes slide {
+    from {
+        transform: translateX(200vw);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+    /* ---------------------------------- */
+    .produtos {
+        padding: 20px;
+        align-items: center;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5 {
+        font-size: 30px;
+
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* -------------------------------------- */
+    .solicitar-cotacao {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .solicitar-cotacao br {
+        display: none;
+    }
+
+    .solicitar-cotacao h3 {
+        font-size: 30px;
+    }
+
+    .solicitar-cotacao p {
+        font-size: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    /* ----------------- */
+
+    .sessao.footer {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .botao-whatsapp img {
+        width: 50px;
+    }
+
+    .botao-whatsapp span {
+        display: none;
+    }
+
+    .contatos {
+        align-items: center;
+    }
+
+    .contato-opcao {
+        gap: 4px;
+        font-size: 15px;
+        place-items: center;
+    }
+
+    .contato-opcao img {
+        width: 30px;
+        height: fit-content;
+    }
+
+    .logo-footer {
+        width: 60%;
+        box-sizing: border-box;
+        align-self: center;
+    }
+
+    /* ------------------------------------------------------------- */
+
+    .avaliacoes-sessao{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.avaliacoes-sessao h2{
+
+    background: none;
+    clip-path: none;
+    padding: 20px;
+    display: flex;
+} 
+
+
+.parte-avaliacao{
+
+} 
+
+
+.avaliacao{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 300px;
+    height: 90%;
+    border-radius: 20px;
+    border: solid 1px #949494;
+    box-shadow: 0 2px 3px black;
+    gap: 20px;
+}
+
+
+
+
+}
+
+@media (max-width: 1030px) {
+    .logo-footer {
+        width: 50%;
+
+    }
+}
