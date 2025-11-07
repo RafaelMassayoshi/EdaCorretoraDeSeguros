@@ -208,7 +208,7 @@ h5 {
     justify-content: center;
     width: 100vw;
     gap: 80px;
-    animation: slide 20s linear infinite alternate;
+    animation: slide 40s linear infinite alternate;
 }
 
 .seguradoras img {
@@ -219,11 +219,11 @@ h5 {
 
 @keyframes slide {
     from {
-        transform: translateX(150vw);
+        transform: translateX(300vw);
     }
 
     to {
-        transform: translateX(-150%);
+        transform: translateX(-300%);
     }
 }
 
@@ -259,6 +259,7 @@ h5 {
     padding: 50px 80px 150px 50px;
     width: 100%;
 } 
+
 
 
 .parte-avaliacao{

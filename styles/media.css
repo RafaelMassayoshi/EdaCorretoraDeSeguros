@@ -91,7 +91,7 @@
 
     .faixa {
         gap: 20px;
-        animation: slide 20s linear infinite alternate;
+        animation: slide 40s linear infinite alternate;
     }
 
     .seguradoras img {
@@ -119,11 +119,11 @@
 
     @keyframes slide {
     from {
-        transform: translateX(200vw);
+        transform: translateX(400vw);
     }
 
     to {
-        transform: translateX(-200%);
+        transform: translateX(-400%);
     }
 }
 
