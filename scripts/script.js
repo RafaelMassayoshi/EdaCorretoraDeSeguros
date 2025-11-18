@@ -36,19 +36,19 @@ function revealOnScroll() {
   const windowHeight = window.innerHeight;
 
   reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top; // posição do elemento na tela
-    const trigger = 150; // quando falta 150px para aparecer
+    const top = el.getBoundingClientRect().top; 
+    const trigger = 150; 
 
     if (top < windowHeight - trigger) {
-      el.classList.add('active'); // adiciona classe que faz aparecer
+      el.classList.add('active'); 
     } else {
-      el.classList.remove('active'); // opcional: desaparece ao rolar pra cima
+      el.classList.remove('active'); 
     }
   });
 }
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // dispara quando a página carrega
+revealOnScroll(); 
 
 
 

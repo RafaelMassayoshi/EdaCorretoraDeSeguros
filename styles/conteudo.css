@@ -255,12 +255,12 @@ h5 {
 
 .avaliacoes-sessao h2{
     background: linear-gradient(90deg,#fa9f63, #ffede2 );
-    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0 100%);
+    clip-path: polygon(0 0, 95% 0, 90% 100%, 0% 100%);
     padding: 50px 80px 150px 50px;
     width: 100%;
+    position: relative;
+    z-index: 2;
 } 
-
-
 
 .parte-avaliacao{
     display:grid;
@@ -268,6 +268,10 @@ h5 {
     padding: 10px;
     gap: 50px;
     overflow: auto;
+    position: relative;
+    left: -10%;
+
+    padding-left: 80px;
 } 
 
 .parte-avaliacao::-webkit-scrollbar {
@@ -495,6 +499,7 @@ select {
     box-shadow: black 5px 5px 10px;
     text-decoration: none;
     animation: piscar 2s infinite alternate;
+    z-index: 10;
 }
 
 @keyframes piscar {
